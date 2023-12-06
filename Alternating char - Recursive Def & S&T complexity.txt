@@ -1,0 +1,17 @@
+Recursive Definition
+---------------------
+
+Base Case: For when the string is null, empty, or has only one character. In these cases, the function returns 0, indicating no deletions are needed.
+
+Recursive Case: For when the string has at least two characters, the function checks if the first two characters are the same. If they are the same, one deletion is necessary. If they are different, they are already alternating, and the function proceeds to check the rest of the string.
+
+Recursive Call: Each call processes the string from the current character onwards, except any character that has been deleted by not including it in the next call.
+
+The recursion ends when all characters have been checked, and the base case is reached for all recursive calls.
+
+Each recursive call that finds two of the same characters next to each other increments the count by 1. The sum of these gives the total deletions needed.
+-----------------------
+
+Space Complexity: The space complexity of the solution is O(n) because each recursive call adds something new to the stack. In the worst case, this will lead to n recursive calls. 
+
+Time Complexity: The time complexity of the solution is O(n) because in the worst case it must check each character in the string once.

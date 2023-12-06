@@ -1,0 +1,3 @@
+Space Complexity: The space complexity of the solution is O(n) because each call to the repeat function creates a new string.
+
+Time Complexity: The time complexity of the solution is O(n^2) because there are the space.repeat and hashtag.repeat operations are called, each of which takes "n" time proportional to the number of times characters are repeated.
